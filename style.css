@@ -1,0 +1,90 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+    background-color: #E3E3E3;
+    color: #000000;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 13px !important;
+}
+
+a, a:hover, a:visited{ 
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+p { margin-top: 20px; }
+
+hr {
+    color: #ffffff; 
+    background-color: #ffffff; 
+    border: 1px dotted #BDBDBD; 
+    border-style: none none dotted; 
+}
+
+#border {
+    border: 10px solid #DEDEDE;
+    margin: 30px auto 0;
+    width: 800px;
+}
+
+#border #page {
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    padding: 10px;
+}
+
+#border #page #title {
+    font-family: "Georgia",georgia,"Times New Roman",Times,serif;
+    font-size: 2em;
+    padding: 5px;
+}
+
+#border #page #title span {
+    clear: right;
+    color: #A39A8D;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 13px;
+    float: right;
+    width: 150px;
+}
+
+#border #page #content {
+    padding: 15px;
+}
+
+#border #page #content #nav {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    width: 128px;
+}
+
+#border #page #content #nav a { margin-bottom: 15px; }
+
+#footer, #footer a, #footer a:hover {
+    font-size: 10px;
+    color: #666666;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    margin: 7px auto 20px;
+    width: 800px;
+}
+
+#footer span { float:right; }
