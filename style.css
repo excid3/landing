@@ -17,14 +17,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 body {
-    background-color: #E3E3E3;
-    color: #000000;
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-    font-size: 13px !important;
+    /*background-color: #E3E3E3;*/
+    background-color: #FFFFFF;
+    color: #58595B;
+    font: Georgia,Times,"Times New Roman",serif
 }
 
 a, a:hover, a:visited{ 
-    color: #000000;
     font-weight: bold;
     text-decoration: none;
 }
@@ -40,30 +39,35 @@ hr {
 }
 
 #border {
-    border: 10px solid #DEDEDE;
+    border: 10px solid #E0E0E0;
     margin: 30px auto 0;
     width: 800px;
+    -moz-border-radius: 10px;
 }
 
 #border #page {
-    background: #FFFFFF;
+    background: #EFEFEF;
     border: 1px solid #CACACA;
     padding: 10px;
 }
 
 #border #page #title {
-    font-family: "Georgia",georgia,"Times New Roman",Times,serif;
     font-size: 2em;
     padding: 5px;
+}
+#border #page #title a {
+    color: #38393B;
+    font-weight: normal;
+    text-shadow: 2px 2px #FFFFFF;
 }
 
 #border #page #title span {
     clear: right;
-    color: #A39A8D;
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-    font-size: 13px;
+    color: #737A7D;
+    font-size: 13.34px;
     float: right;
     width: 150px;
+    text-shadow: 1px 1px #FFFFFF;
 }
 
 #border #page #content {
@@ -78,6 +82,48 @@ hr {
 }
 
 #border #page #content #nav a { margin-bottom: 15px; }
+
+.column {
+    float: left;
+    height: 150px;
+    width: 218px;
+    padding: 3px 8px 3px 8px;
+    margin: 0 7px;
+    -moz-border-radius: 4px;
+    color: #FFFFFF;
+}
+.column h1 { 
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    border: 1px dotted #FFFFFF; 
+    border-style: none none dotted; 
+}
+.column p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 13.34px;
+}
+
+.blue {
+    background-color: #1D9EC5;
+    text-shadow: 1px 1px #0089CA;
+}
+.red {
+    background-color: #EE4036;
+    text-shadow: 1px 1px #D02117;
+}
+.green {
+    background-color: #95CD3C;
+    text-shadow: 1px 1px #5E9D0E;
+}
+
+.main {
+    margin: 20px 0 0 10px;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
 
 #footer, #footer a, #footer a:hover {
     font-size: 10px;
