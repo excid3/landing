@@ -43,6 +43,7 @@ hr {
     margin: 80px auto 0;
     width: 800px;
     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 #border #page {
@@ -90,6 +91,7 @@ hr {
     padding: 3px 8px 3px 8px;
     margin: 0 7px;
     -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     color: #FFFFFF;
 }
 .column h1 { 
