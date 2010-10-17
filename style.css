@@ -24,7 +24,8 @@ body {
     font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 }
 
-a, a:hover, a:visited{ 
+a, a:hover, a:visited{
+    color: #58595B; 
     font-weight: bold;
     text-decoration: none;
 }
@@ -51,6 +52,7 @@ hr {
 #border #page {
     background: #EFEFEF;
     border: 1px solid #CACACA;
+    height: 300px;
     padding: 10px;
 }
 
@@ -105,7 +107,7 @@ hr {
     padding: 10px;
 }
 
-.blue, .red, .green {
+.blue, .red, .green, .blue a, .red a, .green a {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -138,6 +140,10 @@ hr {
 #info .current {
     display: block;
 }
+#info a {
+    text-decoration: underline;
+}
+
 
 #footer, #footer a, #footer a:hover {
     font-size: 10px;

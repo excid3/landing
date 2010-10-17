@@ -1,0 +1,3 @@
+To provide a smooth experience (and since I'm bad at CSS/JS), if you need extra height for content, you should make the static height in the css taller. This is easily modified by editing the "height" property in styles.css in "#border #page" from its current value to a larger amount.
+
+If you are a Google Analytics user, uncomment and insert your GA ID into the section at the bottom.
