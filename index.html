@@ -11,32 +11,37 @@
 	    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 			<script type="text/javascript"
 			 src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript">
+			  $(document).ready(function() {
+				  $("#default").click(function() {
+						return something("#default_info");
+					});
+
+					$("#projects").click(function() {
+						return something("#projects_info");
+					});
+
+					$("#blog").click(function() {
+						return something("#blog_info");
+					});
+
+					$("#contact").click(function() {
+						return something("#contact_info");
+					});
+			  });
+
+		  function something(obj) {
+				$(".current").fadeOut("fast", function() {
+					$(".current").removeClass("current");
+					$(obj).fadeIn("fast", function() {
+						$(obj).addClass("current");
+					});
+				});
+
+				return false;
+			}
+			</script>
     </head>
-		<script type="text/javascript">
-		  $(document).ready(function() {
-			  $("#default").click(function() {
-					return something("#default_info");
-				});
-				
-				$("#projects").click(function() {
-					return something("#projects_info", "red");
-				});
-				
-				$("#blog").click(function() {
-					return something("#blog_info", "green");
-				});
-				
-				$("#contact").click(function() {
-					return something("#contact_info", "blue");
-				});
-		  });
-		
-	  function something(obj, text, background) {
-			$(".current").removeClass("current");
-			$(obj).addClass("current");
-			return false;
-		}
-		</script>
 <body>
 	<a href="http://github.com/excid3"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub" /></a>
   <div id="border">
@@ -63,7 +68,9 @@
 
 				<div id="info">
 					<div id="default_info" class="current">
-						WOAH
+						<p>I am a software engineer.</p>
+						<p>I have been programming since 2000.</p>
+						<p>I love open source and am an active contributor.</p>
 					</div>
 					<div id="projects_info" class="red">
 						WOAH
