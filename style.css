@@ -20,7 +20,8 @@ body {
     /*background-color: #E3E3E3;*/
     background-color: #FFFFFF;
     color: #58595B;
-    font: Georgia,Times,"Times New Roman",serif
+    text-shadow: 2px 2px #FFFFFF;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 }
 
 a, a:hover, a:visited{ 
@@ -29,11 +30,11 @@ a, a:hover, a:visited{
 }
 a:hover { text-decoration: underline; }
 
-p { margin-top: 20px; }
+p { margin-bottom: 10px; }
 
 hr {
     color: #ffffff; 
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border: 1px dotted #BDBDBD; 
     border-style: none none dotted; 
 }
@@ -42,6 +43,7 @@ hr {
     border: 10px solid #E0E0E0;
     margin: 80px auto 0;
     width: 800px;
+    border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
@@ -58,8 +60,7 @@ hr {
 }
 #border #page #title a {
     color: #38393B;
-    font-weight: normal;
-    text-shadow: 2px 2px #FFFFFF;
+    font-weight: bold;
 }
 
 #border #page #title span {
@@ -67,7 +68,8 @@ hr {
     color: #737A7D;
     font-size: 13.34px;
     float: right;
-    width: 150px;
+    text-align: right;
+    width: 550px;
     text-shadow: 1px 1px #FFFFFF;
 }
 
@@ -84,27 +86,30 @@ hr {
 
 #border #page #content #nav a { margin-bottom: 15px; }
 
-.column {
+#content ul {
     float: left;
-    height: 150px;
-    width: 218px;
-    padding: 3px 8px 3px 8px;
-    margin: 0 7px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    color: #FFFFFF;
 }
-.column h1 { 
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    border: 1px dotted #FFFFFF; 
-    border-style: none none dotted; 
+#content ul li {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
 }
-.column p {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 13.34px;
+
+#content ul li a {
+    color: white;
+    padding: 10px;
+}
+
+.blue, .red, .green {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: white;    
 }
 
 .blue {
@@ -120,17 +125,23 @@ hr {
     text-shadow: 1px 1px #5E9D0E;
 }
 
-.main {
-    margin: 20px 0 0 10px;
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-    font-size: 12px;
-    text-align: center;
+#info {
+    float: left;
+}
+
+#info div {
+    display: none;
+    margin: 10px 10px 10px 25px;
+    padding: 10px;
+    width: 550px;
+}
+#info .current {
+    display: block;
 }
 
 #footer, #footer a, #footer a:hover {
     font-size: 10px;
     color: #666666;
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     margin: 7px auto 20px;
     width: 800px;
 }

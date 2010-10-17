@@ -8,63 +8,82 @@
 	    <title>Chris Oliver | excid3.com</title>
 
 	    <link rel="shortcut icon" href="favicon.ico">
-
 	    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
+			<script type="text/javascript"
+			 src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     </head>
-    <body>
-        <div id="border">
-            <div id="page">
-                <div id="title">
-                    <a href="/">Chris Oliver</a>
-                    <span>#!/usr/bin/env python</span>
-                    <span>-*- coding: utf-8 -*-</span>
-                </div>
-                <hr />
-                <div id="content">
+		<script type="text/javascript">
+		  $(document).ready(function() {
+			  $("#default").click(function() {
+					return something("#default_info");
+				});
+				
+				$("#projects").click(function() {
+					return something("#projects_info", "red");
+				});
+				
+				$("#blog").click(function() {
+					return something("#blog_info", "green");
+				});
+				
+				$("#contact").click(function() {
+					return something("#contact_info", "blue");
+				});
+		  });
+		
+	  function something(obj, text, background) {
+			$(".current").removeClass("current");
+			$(obj).addClass("current");
+			return false;
+		}
+		</script>
+<body>
+	<a href="http://github.com/excid3"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <div id="border">
+    <div id="page">
+      <div id="title">
+     		<a href="/" id="default">Chris Oliver</a>
+      </div>
+      <hr />
 
-        <a href="/blog/projects" class="column red">
-            <h1>Projects</h1>
-            <p>See examples of my work. Most projects are released freely under the GPL license.</p>
-        </a>
+      <div id="content">
+				<ul>
+        <li class="red">
+					<a href="/blog/projects" id="projects">Projects</a>
+				</li>
 
-        <a href="/blog" class="column green">
-            <h1>Blog</h1>
-            <p>A look into my thoughts as a developer, student, and all around technology addict.</p>
-        </a>
+				<li class="green">
+        	<a href="/blog" id="blog">Blog</a>
+				</li>
 
-        <a href="/blog/contact" class="column blue">
-            <h1>Hire</h1>
-            <p>Looking for a developer? Send me an email and we can start a discussion.</p>
-        </a>
+				<li class="blue">
+        	<a href="/blog/contact" id="contact">Contact</a>
+				</li>
+				</ul>
 
-    <div style="clear:both"></div>
+				<div id="info">
+					<div id="default_info" class="current">
+						WOAH
+					</div>
+					<div id="projects_info" class="red">
+						WOAH
+					</div>
+					<div id="blog_info" class="green">
+						WOAH
+					</div>
+					<div id="contact_info" class="blue">
+						WOAH
+					</div>
+				</div>
+    		<div style="clear:both"></div>
+      </div>
+    </div>
+  </div>
 
-    <div class="main">
-        Excellence is not a skill; it is an attitude.
-        </div>
+  <div id="footer">
+    <span class="left">Source available on <a href="http://github.com/excid3/landing">Github</a></span>
+    Copyright &copy; 2010 Chris Oliver
+  </div>
 
-    <div style="clear:both"></div>
-
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            <span class="left">Source available on <a href="http://github.com/excid3/landing">Github</a></span>
-            Copyright &copy; 2010 Chris Oliver
-        </div>
-    
-    <!--
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C    /script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("INSERT YOUR GOOGLE CODE ANALYTICS UA-XXXXXXX-X CODE HERE ");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
-    -->
-
-    </body>
+</body>
 </html>
