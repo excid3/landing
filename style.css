@@ -21,7 +21,7 @@ body {
     background-color: #FFFFFF;
     color: #58595B;
     text-shadow: 2px 2px #FFFFFF;
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-family: palatino, 'times new roman', serif;
 }
 
 a, a:hover, a:visited{
