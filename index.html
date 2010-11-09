@@ -1,108 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
-    <head>
-	    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
-	    <meta name="author" content="Chris Oliver">
-	    <meta name="copyright" content="2010 Chris Oliver">
-	    <meta name="description" content="Chris Oliver | excid3.com">
-	    <title>Chris Oliver | excid3.com</title>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<meta name="author" content="Chris Oliver">
+		<meta name="copyright" content="2010 Chris Oliver">
+		<meta name="description" content="Chris Oliver | excid3.com">
+		<title>Chris Oliver | excid3.com</title>
 
-	    <link rel="shortcut icon" href="favicon.ico">
-	    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-			<script type="text/javascript"
-			 src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-			<script type="text/javascript">
-			  $(document).ready(function() {
-				  $("#default").click(function() {
-						return something("#default_info");
-					});
-
-					$("#projects").click(function() {
-						return something("#projects_info");
-					});
-
-					$("#blog").click(function() {
-						return something("#blog_info");
-					});
-
-					$("#contact").click(function() {
-						return something("#contact_info");
-					});
-			  });
-
-		  function something(obj) {
-				$(".current").fadeOut("fast", function() {
-					$(".current").removeClass("current");
-					$(obj).fadeIn("fast", function() {
-						$(obj).addClass("current");
-					});
-				});
-
-				return false;
-			}
-			</script>
-    </head>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+	</head>
 <body>
-
-<a href="http://github.com/excid3"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="border">
-    <div id="page">
-      <div id="title">
-     		<a href="/" id="default">Chris Oliver</a>
-      </div>
-      <hr />
-
-      <div id="content">
-				<ul>
-        <li class="red">
-					<a href="/blog/projects" id="projects">Projects</a>
-				</li>
-
-				<li class="green">
-        	<a href="/blog" id="blog">Blog</a>
-				</li>
-
-				<li class="blue">
-        	<a href="/blog/contact" id="contact">Contact</a>
-				</li>
-				</ul>
-
-				<div id="info">
-					<div id="default_info" class="current">
-						<p>I am a software engineer.</p>
-						<p>I have been programming since 2000.</p>
-						<p>My resume is available in PDF and DOCX format <a href="http://github.com/excid3/resume/zipball/master">here</a>.</p>
-						<p>I love open source and am an active contributor.</p>
-						<p>I enjoy web development but have a background in desktop software.</p>
-						<p>Security is a currently untapped passion I have.</p>
-						<p>
-					</div>
-					<div id="projects_info" class="red">
-						<p><a href="http://keryxproject.org">Keryx</a> is an application Ubuntu and Debian Linux users who have low bandwidth connections.</p>
-						<p><a href="http://tracklerapp.com">Trackler</a> is a time tracking application for Android devices.</p>
-						<p>You can find a list of some of my other projects on <a href="http://github.com/excid3">Github</a> and my <a href="http://currentprojects.heroku.com">Projects Page</a></p>
-					</div>
-					<div id="blog_info" class="green">
-						<p>Development can be a frustrating activity. I try to keep a log of large problems and concepts I have tackled over the years which you can find in my blog.</p>
-						<p>Visit my <a href="/blog">Blog</a></p>
-					</div>
-					<div id="contact_info" class="blue">
-						<p>You can reach me by email at <a href="mailto:chris@excid3.com">chris {at} excid3 [dot] c o m</a></p>
-						<p>I'm often found hanging out on IRC at <a href="irc://irc.freenode.net/keryx">#keryx</a></p>
-						<p>Also find me on <a href="http://twitter.com/excid3">Twitter</a>, <a href="http://github.com/excid3">Github</a>, <a href="http://www.linkedin.com/in/excid3">LinkedIn</a>, <a href="http://www.last.fm/user/excid3">Last.fm</a></p>
-						<p>If you prefer instant messenger or an email form, please visit my <a href="/blog/contact">Contact Page</a></p>
-					</div>
-				</div>
-    		<div style="clear:both"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="footer">
-    <span class="left">Source available on <a href="http://github.com/excid3/landing">Github</a></span>
-    Copyright &copy; 2010 Chris Oliver
-  </div>
+  <!-- Super cool layout inspired by http://trentwalton.com/2010/04/06/css3-background-clip-font-face/ -->
+	<div id="container"> 
+		<div class="main"> 
+			<div class="name">My name is Chris Oliver and I'm a software</div> 
+			<div class="dev"><a href="http://github.com/excid3">developer</a></div> 
+			<span class="line-left"></span><div class="itworked">&amp; love to</div><span class="line-right"></span> 
+			<div class="hoo">create!</div> 
+			<div class="view">
+				<a href="http://excid3.com/blog">View my blog</a>
+				 &bull; 
+				<a href="http://twitter.com/excid3">Follow me on Twitter</a>
+			</div> 
+		</div>	
+		<div class="explanation">This website uses HTML5/CSS3. If you are having trouble, try using a browser like <a href="http://www.apple.com/safari/download/">Safari</a> or <a href="http://www.google.com/chrome">Chrome</a>.</div>	
+	</div>
 
 	<script type="text/javascript">
 
