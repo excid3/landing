@@ -10,85 +10,74 @@ a img{border:none;}
 /* Page
 -------------------------------------------------------------- */
 body {
-    color: #2a4f54;
+    background: #EFEFEF;
+    font-family: "minion-pro-1","minion-pro-2", "Times New Roman", Georgia, serif;
     text-align: center;
-    background-color: #4a8d97;
-    background-image: url(./images/grunge.jpg);
+    text-shadow: white 1px 1px 0;
 }
+
 #container {
     margin: 0px auto 35px;
-    width:660px;
+    width:825px;
     padding-top: 60px;
 }
-.main {
-    font-family: "LeagueGothicRegular", Impact, Charcoal, sans-serif;
-    text-transform: uppercase;
+
+#main {
     line-height: .9;
 }
-.explanation {
-    margin-top: 20px;
-    font: italic 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+#footer {
+    clear: both;
+    color: #666;
+    font: 13.34px helvetica,arial,freesans,clean,sans-serif;
+    margin-top: 15px;
 }
-a { 
-    color: #2a4f54;
+
+
+#projects a {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    color: #369;
+    font: 13.34px helvetica,arial,freesans,clean,sans-serif;
+    font-weight: bold;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -moz-gradient(linear, left top, left bottom, from(white), to(#E8E8E8));
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#E8E8E8));
+    float: left;
+    margin: 15px 20px 5px 0;
+    padding: 20px 10px 10px;
     text-decoration: none;
-    -webkit-transition: color .6s linear;
+    width: 160px;
 }
-a:hover { 
-    color: #fff; 
+#projects a:hover { 
+    color: #222; 
     -webkit-transition: color .1s linear;
+    background: -moz-gradient(linear, left bottom, left top, from(white), to(#E8E8E8));
+    background: -webkit-gradient(linear, left bottom, left top, from(white), to(#E8E8E8));
 }
 
-
-@font-face {
-    font-family: 'LeagueGothicRegular'; 
-    src: local('League Gothic Regular'), url('League Gothic.otf') format('opentype');
+#footer, #footer a {
+    color: #888;
+    text-decoration: none;
 }
 
-span {
-    color: #dddddd;
+#footer {
+    margin-top: 45px;
 }
+#footer a {
+    margin: 0 10px;
+}
+
 .name {
-    font-size: 50px;
+    font-size: 78px;
+    letter-spacing: -2px;
 }
 .dev {
-    font-size: 206px;
+    color: #C00;
+    font-size: 24px;
     letter-spacing: 5px;
     line-height: 1;
-}
-.itworked {
-    font: italic 60px/0 ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
-    text-transform: lowercase;
-    margin-bottom: 12px;
-    margin-top:12px;
-}
-.hoo {
-    font-size: 258px;
-    letter-spacing: 5px;
-    line-height: 1;
-}
-.view {
-    font-size: 57px;
-    margin-top: -15px;
-}
-.hoo, .css {
-    text-shadow: #4a8d97 3px 3px 0;
-}
-
-
-.line-left, .line-right {
-    border-bottom: 2px solid #2a4f54;
-    width: 160px;
-    display: inline-block;
-    margin-bottom: -30px;
-}
-.line-left {
-    float: left;
-    margin-top: 28px;
-    margin-left: 15px;
-}
-.line-right {
-    float: right;
-    margin-top: -26px;
-    margin-right: 15px;
+    margin-bottom:45px;
+    text-transform: uppercase;
 }
