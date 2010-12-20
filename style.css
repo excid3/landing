@@ -35,15 +35,19 @@ body {
 
 
 #projects a {
+    background: white;
+    background: -moz-gradient(linear, left top, left bottom, from(white), to(#E8E8E8)) !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#E8E8E8)) !important;
     border: 1px solid #CCC;
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px #AAA;
+    -moz-box-shadow: 0 0 5px #AAA;
+    -webkit-box-shadow: 0 0 5px #AAA;
     color: #369;
     font: 13.34px helvetica,arial,freesans,clean,sans-serif;
     font-weight: bold;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background: -moz-gradient(linear, left top, left bottom, from(white), to(#E8E8E8));
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#E8E8E8));
     float: left;
     margin: 15px 20px 5px 0;
     padding: 20px 10px 10px;
@@ -51,10 +55,10 @@ body {
     width: 160px;
 }
 #projects a:hover { 
+    background: -moz-gradient(linear, left bottom, left top, from(white), to(#E8E8E8)) !important;
+    background: -webkit-gradient(linear, left bottom, left top, from(white), to(#E8E8E8)) !important;
     color: #222; 
     -webkit-transition: color .1s linear;
-    background: -moz-gradient(linear, left bottom, left top, from(white), to(#E8E8E8));
-    background: -webkit-gradient(linear, left bottom, left top, from(white), to(#E8E8E8));
 }
 
 #footer, #footer a {
@@ -67,6 +71,9 @@ body {
 }
 #footer a {
     margin: 0 10px;
+}
+#footer a:hover {
+    color: #000;
 }
 
 .name {
