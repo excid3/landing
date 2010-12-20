@@ -11,10 +11,11 @@ a img{border:none;}
 -------------------------------------------------------------- */
 body {
     background: #EFEFEF;
+    background:    -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .15)), color-stop(.75, transparent))
     font-family: "minion-pro-1","minion-pro-2", "Times New Roman", Georgia, serif;
     text-align: center;
     text-shadow: white 1px 1px 0;
-}
+}   
 
 #container {
     margin: 0px auto 35px;
@@ -42,9 +43,9 @@ body {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    box-shadow: 0 0 5px #AAA;
-    -moz-box-shadow: 0 0 5px #AAA;
-    -webkit-box-shadow: 0 0 5px #AAA;
+    box-shadow: 0 0 5px #FFF;
+    -moz-box-shadow: 0 0 5px #FFF;
+    -webkit-box-shadow: 0 0 5px #FFF;
     color: #369;
     font: 13.34px helvetica,arial,freesans,clean,sans-serif;
     font-weight: bold;
@@ -58,7 +59,7 @@ body {
     background: -moz-gradient(linear, left bottom, left top, from(white), to(#E8E8E8)) !important;
     background: -webkit-gradient(linear, left bottom, left top, from(white), to(#E8E8E8)) !important;
     color: #222; 
-    -webkit-transition: color .1s linear;
+    -webkit-transition: all .1s ease-out;
 }
 
 #footer, #footer a {
