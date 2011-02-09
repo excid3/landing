@@ -25,7 +25,6 @@ a:hover { text-decoration: underline; }
 }
 #header {
     margin-top: 140px;
-    overflow: hidden;
     width: 400px;
 }
 #header .avatar {
@@ -59,7 +58,6 @@ a:hover { text-decoration: underline; }
 #projects li {
     border-top: 1px solid #EFEFEF;
     padding: 15px;
-    text-align: center;
 }
 #projects .first { 
     border: none;
