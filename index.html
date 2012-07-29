@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
-		<meta name="author" content="Chris Oliver">
-		<meta name="copyright" content="2010 Chris Oliver">
-		<meta name="description" content="Chris Oliver | excid3.com">
-		<title>Chris Oliver | excid3.com</title>
+  <head>
+    <title>Chris Oliver is a rebel | excid3.com</title>
+    <meta name="description" content="I write innovative software using Ruby, Rails, and Javascript for agencies, companies, and individuals looking for a developer who can understand their needs. ">
+    <meta name="author" content="Chris Oliver">
 
 		<link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
 		<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+  </head>
+  <body>
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	</head>
-<body>
-	<div id="container">
-		<div id="header"> 
-			<a href="/"><img class="avatar" src="http://www.gravatar.com/avatar/ce795239ba5dd2384fc2f88ffaff5451" /></a>
-			<div class="name">Hi, I'm Chris Oliver.</div> 
-			<div class="dev">I'm a software engineer</div>
-			<div>
-				<a href="http://twitter.com/excid3"><img src="images/twitter.png" alt="twitter" /></a>
-				<a href="http://github.com/excid3"><img src="images/github.png" alt="Github" /></a>
-				<a href="mailto:excid3@gmail.com"><img src="images/email.png" alt="email" /></a><D-r>	
-			</div>	
-		</div>
+    <div class="container">
+      <h1 class="name"><a href="http://excid3.com">Chris Oliver</a> <span>is a rebel</span></h1>
 
-		<ul id="projects">
-			<li class="first"><a href="http://excid3.com/blog">My blog about linux, programming, and life.</a></li>
-			<li>I created a package management system for offline Linux users called <a href="http://keryxproject.org">Keryx</a>.</li>
-			<li><a href="http://fluttrly.com">Fluttrly</a> is a minimalist todo list app I wrote.</li>
-			<li>A <a href="http://projects.excid3.com">list of projects</a> I'm currently working on.</li>
-		</ul>
+      <div class="about">
+        I write <strong>innovative software</strong> for agencies, companies, and individuals looking for a developer who can understand their needs.
+      </div>
+    </div>
 
-	</div>
+    <div id="nav">
+      <div class="container">
+        <ul class="links">
+          <li><a class="email" href="#get-in-touch">say hello</a></li>
+          <li><a class="blog" href="#blog">read my blog</a></li>
+          <li><a class="twitter" href="http://twitter.com/excid3">follow me on twitter</a></li>
+          <li><a class="github" href="http://github.com/excid3">view my work on github</a></li>
+        </ul>
+      </div>
+    </div>
 
-	<!-- Google Analytics -->
-	<script type="text/javascript">
+    <div id="get-in-touch" class="section">
+      <div class="container">
+        <p class="large">Everyone you meet knows something you don't.</p>
+        <p>I'd love to meet you. Share your thoughts or just say hi.</p>
+        <a class="btn" href="mailto:chris@excid3.com">Let's chat</a>
+      </div>
+    </div>
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-8399719-1']);
-	  _gaq.push(['_trackPageview']);
+    <div id="blog" class="section">
+      <div class="container">
+        <p class="large">Success Is Based On Persistence</p>
+        <p>Life is complicated. I write often to help document, analyze, and inspire throughout my travels as a developer and entrepreneur.</p>
+        <a class="btn" href="http://excid3.com/blog">Read My Blog</a>
+      </div>
+    </div>
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+    <div id="footer">
+      <div class="container">
+        <p>Do things that scare you.</p>
+      </div>
+    </div>
 
-	</script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      $('.carousel').carousel({interval: 8000});
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-8399719-1']);
+      _gaq.push(['_trackPageview']);
 
-</body>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </body>
 </html>
