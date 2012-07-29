@@ -84,7 +84,7 @@ p.large {
 
 .section {
   color: white;
-  padding: 150px;
+  padding: 150px 0;
   overflow: hidden;
 }
 
@@ -122,6 +122,6 @@ a.btn:hover {
   overflow: hidden;
 }
 #footer p {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 400;
 }
