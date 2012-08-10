@@ -17,6 +17,7 @@ h1.name {
   margin: 0;
   padding: 20px 0;
   text-align: center;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
 }
 h1.name a {
@@ -56,6 +57,7 @@ ul.links li {
 ul.links li a {
   color: white;
   text-decoration: none;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .email:hover { color: #8CD600; }
@@ -81,6 +83,7 @@ p.large {
   font-size: 38px;
   font-weight: 800;
   letter-spacing: -1px;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .section {
@@ -103,11 +106,13 @@ a.btn{
   padding: 20px 0;
   text-align: center;
   text-decoration: none;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.3);
   width: 40%;
 }
 a.btn:hover {
   background-color: white;
   color: #4D4D4D;
+  text-shadow: none;
 }
 
 #get-in-touch {
@@ -125,4 +130,5 @@ a.btn:hover {
 #footer p {
   font-size: 16px;
   font-weight: 400;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.3);
 }
