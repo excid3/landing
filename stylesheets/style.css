@@ -1,0 +1,117 @@
+@charset "UTF-8";
+body {
+  background-color: white;
+  font-family: 'proxima-nova', sans-serif; }
+
+.header {
+  background-color: whiteSmoke;
+  text-transform: uppercase; }
+  .header h1 {
+    display: inline-block;
+    font-size: 56px;
+    letter-spacing: -3px;
+    line-height: 96px; }
+    .header h1 a {
+      color: black; }
+      .header h1 a:hover {
+        color: #666;
+        text-decoration: none; }
+    .header h1 span {
+      color: #3D3D3D;
+      font-size: 40px;
+      letter-spacing: -1px; }
+
+.nav {
+  font-weight: bold;
+  margin-top: 50px; }
+  .nav a {
+    color: #808080;
+    margin-left: 15px; }
+    .nav a:first-child {
+      margin-left: 0px; }
+    .nav a:hover {
+      color: black;
+      text-decoration: none; }
+
+.light-blue {
+  color: #9BA3B2; }
+
+.dark {
+  background-color: #20272F;
+  color: white; }
+  .dark p {
+    color: #ccc; }
+
+.red {
+  background-color: #e71735;
+  color: white; }
+
+.blue {
+  background-color: #02A9B9;
+  color: white; }
+
+.right-arrow:after {
+  content: " ▸"; }
+
+.hero p {
+  color: #777;
+  font-size: 1.2em; }
+.hero .hero-about {
+  margin-top: 50px; }
+
+section {
+  padding: 60px 0; }
+  section h1 {
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 35px; }
+  section h3 {
+    line-height: 60px; }
+  section p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    /*text-shadow: 0 2px rgba(0, 0, 0, 0.2);*/
+    margin-bottom: 10px; }
+
+footer .motd {
+  color: #888;
+  margin: 60px 0; }
+footer .nav {
+  margin: 60px 0;
+  text-transform: uppercase; }
+  footer .nav a {
+    color: #444;
+    font-weight: 800;
+    margin: 0 15px 0 0; }
+
+@media (max-width: 767px) {
+  body {
+    padding: 0; }
+
+  .container {
+    padding: 0 20px; }
+
+  .nav {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%; }
+
+  .header h1 {
+    display: block;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center; }
+    .header h1 span {
+      font-size: 24px; } }
+.well {
+  color: #444; }
+  .well p {
+    color: #444; }
+
+.hire-me {
+  font-size: 1em; }
+
+.centered {
+  text-align: center; }

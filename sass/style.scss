@@ -1,15 +1,6 @@
-@import "bootstrap";
-@import "bootstrap-responsive";
-@import "animate";
-@import "font-awesome";
-
 body {
   background-color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.centered {
-  text-align: center;
+  font-family: 'proxima-nova', sans-serif;
 }
 
 .header {
@@ -58,9 +49,11 @@ body {
 .dark {
   background-color: #20272F;
   color: white;
+
+  p { color: #ccc; }
 }
 .red {
-  background-color: #EA2E49;
+  background-color: darken(#EA2E49, 5%);
   color: white;
 }
 .blue {
@@ -68,57 +61,41 @@ body {
   color: white;
 }
 
+.right-arrow:after {
+  content: " ▸";
+}
+
+.hero {
+  p {
+    color: #777;
+    font-size: 1.2em;
+  }
+
+  .hero-about {
+    margin-top: 50px;
+  }
+}
+
+
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 
   h1 {
-    font-size: 38px;
+    font-size: 56px;
     font-weight: 400;
     letter-spacing: -1px;
     margin-bottom: 35px;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
   }
 
   h3 {
     line-height: 60px;
-
-    [class^="icon-"], [class*=" icon-"] {
-      background: rgba(0,0,0,0.2);
-      border-radius: 50%;
-      float: left;
-      height: 60px;
-      line-height: normal;
-      margin-right: 10px;
-      width: 60px;
-
-      &:before { margin: 20px 0 0 19px; }
-    }
   }
 
   p {
-    font-size: 1.4em;
-    line-height: 1.75em;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-  }
-
-  .leftside {
-    margin-top: 20px;
-
-    p {
-      font-size: 1.15em;
-      line-height: 1.2em;
-      margin-bottom: 5px;
-      padding-left: 18px;
-      position: relative;
-
-      [class^="icon-"] {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
+    font-size: 1.2em;
+    line-height: 1.5em;
+    /*text-shadow: 0 2px rgba(0, 0, 0, 0.2);*/
+    margin-bottom: 10px;
   }
 }
 
@@ -140,23 +117,6 @@ footer {
   }
 }
 
-.button {
-  background-color: whiteSmoke;
-  border: 1px solid #CCC;
-  border-radius: 5px;
-  color: #222;
-  font-weight: 800;
-  padding: 8px 20px;
-  text-shadow: none;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: white;
-    color: #333;
-    text-decoration: none;
-  }
-}
-
 @media (max-width: 767px) {
   body { padding: 0; }
   .container { padding: 0 20px; }
@@ -175,4 +135,20 @@ footer {
       span { font-size: 24px; }
     }
   }
+}
+
+.well {
+  color: #444;
+
+  p {
+    color: #444;
+  }
+}
+
+.hire-me {
+  font-size: 1em;
+}
+
+.centered {
+  text-align: center;
 }
