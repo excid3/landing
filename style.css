@@ -58,6 +58,8 @@ body {
   font-size: 1.2em; }
 .hero .hero-about {
   margin-top: 50px; }
+  .hero .hero-about h1 {
+    font-weight: 800; }
 
 section {
   padding: 60px 0; }
